@@ -76,7 +76,7 @@ main {
 
 .card-content {
     padding: 1.5rem;
-    text-align: center;
+    text-align: left; /* Left-align for better readability */
 }
 
 .card-content h2 {
@@ -86,8 +86,11 @@ main {
 }
 
 .card-content p {
+    margin-bottom: 1rem; /* Space between paragraphs and list */
     color: #7f8c8d;
+    line-height: 1.8; /* Improve readability with increased line spacing */
 }
+
 
 /* Navigation arrows */
 .nav-arrow {
@@ -155,35 +158,35 @@ footer {
 
 /* Social links list */
 .social-links {
-    list-style: none; /* Remove default bullets */
+    list-style: none;
     padding: 0;
     margin: 1rem 0 0;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the list items */
-    gap: 0.5rem; /* Space between list items */
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .social-links li {
     display: flex;
-    align-items: center; /* Align icon and text vertically */
-    gap: 0.5rem; /* Space between icon and text */
+    align-items: center;
+    gap: 0.5rem;
     font-size: 1.1rem;
 }
 
 .social-links li i {
-    color: #34495e; /* Match card title color for consistency */
+    color: #34495e;
     font-size: 1.2rem;
 }
 
 .social-links li a {
-    color: #7f8c8d; /* Match card description color */
+    color: #7f8c8d;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .social-links li a:hover {
-    color: #2c3e50; /* Darker color on hover, matching nav arrows */
+    color: #3498db;
 }
 
 /* Ensure card-content text is centered */
@@ -193,26 +196,26 @@ footer {
 
 /* Inline social link in paragraph */
 .inline-social-link {
-    color: #7f8c8d; /* Match social-links text color */
-    text-decoration: none; /* Remove default underline */
-    font-weight: 600; /* Slightly bolder, like social-links */
-    transition: color 0.3s ease; /* Smooth hover transition */
-    display: inline-flex; /* Align icon and text */
-    align-items: center; /* Center icon vertically with text */
-    gap: 0.4rem; /* Space between icon and text */
+    color: #34495e; /* Match card title color */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
 }
 
 .inline-social-link i {
-    color: #34495e; /* Match social-links icon color */
-    font-size: 1.1rem; /* Slightly smaller for inline text */
+    color: #34495e;
+    font-size: 1.1rem;
 }
 
 .inline-social-link:hover {
-    color: #3498db; /* Match social-links hover color */
+    color: #3498db;
 }
 
 .inline-social-link:hover i {
-    color: #3498db; /* Icon changes color on hover */
+    color: #3498db;
 }
 
 /* Image container for rotation */
