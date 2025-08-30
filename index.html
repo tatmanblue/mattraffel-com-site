@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tatman Blue</title>
-    <link rel="stylesheet" href="https://tatmanblue.github.io/mattraffel-com-site/style.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
@@ -18,24 +18,39 @@
             <button class="nav-arrow left" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
             <div class="card-container" id="cardContainer">
                 <div class="card" data-index="0">
+                    <h2>The Engineer</h2>
                     <img src="images/1.jpg" alt="Photo 1">
                     <div class="card-content">
-                        <h2>About</h2>
-                        <p>Here's the card about me</p>
+                        <p>
+                            By day, I am a programmer—and let's be honest, most evenings too.  I have
+                            <a href="https://store.steampowered.com/app/2579870/Max_Capacity/" class="inline-social-link" target="_blank" rel="noopener">
+                                published game on Steam<i class="fab fa-steam"></i>.  Published a couple of apps for Android.  Written some blockchain services.
+                            </a>  
+                        </p>
+                        <p>You can discover a bit more about me by finding me at:</p>
+                        <ul class="social-links">
+                            <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/mattraffel/">LinkedIn</a></li>
+                            <li><i class="fab fa-github"></i> <a href="https://github.com/tatmanblue">Github</a></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="card" data-index="1">
-                    <img src="images/2.jpg" alt="Photo 2">
-                    <div class="card-content">
-                        <h2>Road America</h2>
-                        <p>Here's a card about some of my hobbies</p>
+                    <h2>The artist</h2>
+                    <div class="image-container">
+                        <img src="images/2-1.jpg" alt="Artist Photo" class="rotating-image">
                     </div>
-                </div>
-                <div class="card" data-index="2">
-                    <img src="images/3.jpg" alt="Photo 3">
                     <div class="card-content">
-                        <h2>Guitar playing</h2>
-                        <p>Here is another card about other hobbies</p>
+                        <p>Like enjoy art, and finding my inspiration from artits like Rothko and Klee.  Here's a few of my works:</p>
+                        <ui class="social-links">
+                            <li><i class="fab fa-flickr"></i> <a href="https://www.flickr.com/photos/65766392@N08/albums/72157672391192911/">Flickr</a></li>
+                        </ui>
+                    </div>
+                </div>                
+                <div class="card" data-index="2">
+                    <h2>The Adventurer</h2>
+                    <img src="images/3.jpg" alt="Photo 2">
+                    <div class="card-content">
+                        <p>Here's a card about some of my hobbies</p>
                     </div>
                 </div>
             </div>
@@ -45,6 +60,6 @@
     <footer>
         <p>&copy; 2025 Matt Raffel. All rights reserved.</p>
     </footer>
-    <script src="https://tatmanblue.github.io/mattraffel-com-site/code.js"></script>
+    <script src="code.js"></script>
 </body>
 </html>

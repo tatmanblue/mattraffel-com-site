@@ -152,3 +152,92 @@ footer {
         font-size: 2rem;
     }
 }
+
+/* Social links list */
+.social-links {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the list items */
+    gap: 0.5rem; /* Space between list items */
+}
+
+.social-links li {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    gap: 0.5rem; /* Space between icon and text */
+    font-size: 1.1rem;
+}
+
+.social-links li i {
+    color: #34495e; /* Match card title color for consistency */
+    font-size: 1.2rem;
+}
+
+.social-links li a {
+    color: #7f8c8d; /* Match card description color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+    color: #2c3e50; /* Darker color on hover, matching nav arrows */
+}
+
+/* Ensure card-content text is centered */
+.card-content p {
+    text-align: center;
+}
+
+/* Inline social link in paragraph */
+.inline-social-link {
+    color: #7f8c8d; /* Match social-links text color */
+    text-decoration: none; /* Remove default underline */
+    font-weight: 600; /* Slightly bolder, like social-links */
+    transition: color 0.3s ease; /* Smooth hover transition */
+    display: inline-flex; /* Align icon and text */
+    align-items: center; /* Center icon vertically with text */
+    gap: 0.4rem; /* Space between icon and text */
+}
+
+.inline-social-link i {
+    color: #34495e; /* Match social-links icon color */
+    font-size: 1.1rem; /* Slightly smaller for inline text */
+}
+
+.inline-social-link:hover {
+    color: #3498db; /* Match social-links hover color */
+}
+
+.inline-social-link:hover i {
+    color: #3498db; /* Icon changes color on hover */
+}
+
+/* Image container for rotation */
+.image-container {
+    width: 100%;
+    height: 400px; /* Match existing card image height */
+    overflow: hidden;
+    position: relative;
+}
+
+.rotating-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; /* Fade transition */
+}
+
+.rotating-image.fade {
+    opacity: 0; /* For fade-out during transition */
+}
+
+/* Ensure responsive height matches existing media query */
+@media (max-width: 768px) {
+    .image-container {
+        height: 300px; /* Match existing card image height for mobile */
+    }
+}
