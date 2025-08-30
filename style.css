@@ -74,21 +74,34 @@ main {
     object-fit: cover;
 }
 
+/* Ensure card-content remains consistent */
 .card-content {
     padding: 1.5rem;
-    text-align: left; /* Left-align for better readability */
+    text-align: left;
 }
+
+.card-content p {
+    margin-bottom: 1rem;
+    color: #7f8c8d;
+    line-height: 1.8;
+}
+/*
+.card-content {
+    padding: 1.5rem;
+    text-align: left; 
+}
+
+.card-content p {
+    margin-bottom: 1rem; 
+    color: #7f8c8d;
+    line-height: 1.8; 
+}
+*/
 
 .card-content h2 {
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
     color: #34495e;
-}
-
-.card-content p {
-    margin-bottom: 1rem; /* Space between paragraphs and list */
-    color: #7f8c8d;
-    line-height: 1.8; /* Improve readability with increased line spacing */
 }
 
 
@@ -244,3 +257,122 @@ footer {
         height: 300px; /* Match existing card image height for mobile */
     }
 }
+
+/* Form section */
+#contact-form-section {
+    margin-top: 1rem;
+}
+
+#contact-form-section h3 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+}
+
+#contact-form-section hr {
+    border: 0;
+    border-top: 1px solid #7f8c8d;
+    margin: 0.5rem 0 1rem;
+}
+
+/* Form group */
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #34495e;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-group label i {
+    font-size: 1.1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #7f8c8d;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Submit button */
+#contactForm button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #34495e;
+    color: #ecf0f1;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactForm button i {
+    font-size: 1rem;
+}
+
+#contactForm button:hover {
+    background-color: #2c3e50;
+}
+
+/* Confidentiality note */
+.confidentiality-note {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+/* Thank-you section */
+#thank-you-section {
+    margin-top: 1rem;
+}
+
+#thank-you-section h3 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+}
+
+#thank-you-section hr {
+    border: 0;
+    border-top: 1px solid #7f8c8d;
+    margin: 0.5rem 0 1rem;
+}
+
+#thank-you-section p {
+    color: #7f8c8d;
+    line-height: 1.8;
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
+

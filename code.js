@@ -77,3 +77,38 @@ document.addEventListener('DOMContentLoaded', () => {
         startImageRotation();
     }
 });
+
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    // Gather form data
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Prepare JSON payload
+    const payload = {
+        Name: name,
+        Email: email,
+        Message: message
+    };
+
+    try {
+        const response = await fetch('http://services.tatmangames.com/svc/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+        });
+
+        if (response.ok) {
+            document.getElementById('contact-form-section').style.display = 'none';
+            document.getElementById('thank-you-section').style.display = 'block';
+        } else {
+            alert('There was a problem submitting your request. Please try again later.');
+        }
+    } catch (error) {
+        alert('Our apologizes.  We are aware of this issue and are working to resolve it. Please try again later.');
+    }
+});
