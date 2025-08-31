@@ -36,7 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const imageList = [
         'images/2-1.jpg',
         'images/2-2.jpg',
-        'images/2-3.jpg'
+        'images/2-3.jpg',
+        'images/2-4.jpg'
     ];
     let imageIndex = 0;
     let rotationInterval = null;
@@ -61,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function startImageRotation() {
         // Only start if on the artist card
         if (currentIndex === 1 && !rotationInterval) {
-            rotationInterval = setInterval(rotateImage, 5000); // Rotate every 5 seconds
+            rotationInterval = setInterval(rotateImage, 3500); 
         }
     }
 
